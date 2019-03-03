@@ -1,0 +1,17 @@
+mixin sert()
+	// start sert
+	+b.sert
+		.container
+			+e.slider-wrap
+				+e.slider--js.swiper-container.gal
+					.swiper-wrapper
+						- for (var x = 0; x < 8; x++)
+							+e.slide.swiper-slide
+								+e.item.lazy-background(href="img/sert.jpg")
+									img.res-i.lazy(src="#" data-src="img/sert.jpg", alt="")
+							// /+e.slide.swiper-slide
+					.swiper-button-next
+						img(src="img/circle-arrow.svg", alt="")
+					.swiper-button-prev
+						img(src="img/circle-arrow.svg", alt="")
+	// end sert

@@ -1,0 +1,31 @@
+mixin s-qualification()
+	// start s-qualification
+	+b.s-qualification.section.lazy-background.pb-0#s-qualification&attributes(attributes)
+		.container
+			+e.block
+				+b.section-title
+					h2 Квалификация. Опыт. Личная миссия.
+				.row
+					+e.item.col-auto
+						div
+							img.lazy(src="#" data-src="img/icon-1.png", alt="")
+						+e.text
+							.fw-900.h2 32 года
+							.small Опыт работы
+					
+					+e.item.col-auto
+						div
+							img.lazy(src="#" data-src="img/icon-2.png", alt="")
+						+e.text
+							.fw-900.h2 400+
+							.small вылеченных пациентов
+				.text-primary
+					p «Я уверена, самое главное для врача, помимо профессионализма, доброта, сострадательность и внимательность.
+
+					p Важно показать пациенту простым и понятным языком, все варианты лечения, которые только предоставляет мировая практика, взвешивая преимущества и риски.
+
+					p А ещё для врача важна настойчивость. Поэтому я гарантирую, что приложу все усилия, весь свой опыт, все свои знания, и не успокоюсь пока не помогу пациенту избавиться от физической и / или эмоциональной боли».
+					img.lazy(src="#" data-src="img/autograf.jpg", alt="")
+					+e.img-wrap
+						img.res-i.lazy(src="#" data-src="img/doc.png", alt="")
+	// end s-qualification

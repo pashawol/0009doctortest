@@ -1,0 +1,33 @@
+mixin header-block()
+	// start header-block
+	+b.header-block#header-block
+		.container 
+			h1 Лечение варикоза вен без 
+				br
+				| реабилитации, без следов и&nbsp;шрамов
+			+e.text Здравствуйте! Я&nbsp;врач-флеболог Рябинская Оксана Сергеевна
+
+			.h6 В&nbsp;этом видео я&nbsp;расскажу, как смогу вам помочь
+	
+			.row
+				.col
+					+e.btn.popup-youtube(href="http://www.youtube.com/watch?v=0O2aH4XLbto") забыть о варикозе
+					+e.link-wrap
+						+e.link(href="#" data-toggle="modal" data-target="#modal-win" data-title="Пройти консультацию") Записаться на прием 
+				.col-sm-auto.align-self-end
+					+b.rating-block
+						p Рейтинг врача
+						+e.star-wrap
+							+e.item
+								+icon('star-solid')
+							+e.item
+								+icon('star-regular')
+							+e.item
+								+icon('star-regular')
+							+e.item
+								+icon('star-half-alt-solid')
+							+e.item
+								+icon('star-regular')
+							+e.item 4.9
+						.small на основе 7 отзывов
+	// end header-block

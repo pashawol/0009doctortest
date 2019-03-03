@@ -1,0 +1,102 @@
+.s-contact {
+	&__map{
+		@include media-breakpoint-up(md) {
+
+			height: 700px;
+		}
+		height: 350px;
+		position: relative;
+		iframe{
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100% !important;
+			height: 100% !important;
+		}
+	}
+	.container{
+		position: relative;
+	}
+	&__block{
+		@include media-breakpoint-up(md) {
+
+			position: absolute;
+			top: 180px;
+			left: 0;
+			width: 330px; 
+			box-shadow: 0 $h5-font-size $h2-font-size rgba(44, 48, 79, 0.29);
+			border-radius: 10px;
+			border: 1px solid $info;
+			background-color: #ffffff;
+
+			text-align: left;
+		}
+		text-align: center;
+		padding: 35px 28px;
+		z-index: 2;
+	}
+	&__title{
+		font-size: $h5-font-size;
+		font-weight: bold;
+		color: $primary;
+		padding-bottom: 15px;
+	}
+	&__item{
+		@include media-breakpoint-up(md) {
+
+			display: flex;
+		}
+		display: inline-flex;
+		align-items: center;
+		margin-left: auto;
+		margin-right: auto;
+		@extend .text-body;
+		line-height: 1;
+		margin-bottom: 30px;
+		&--tel{
+			font-size: $h4-font-size;
+		}
+		.icon{
+			font-size: 40px;
+			margin-right: 10px;
+			&-tel{
+				font-size: 25px;
+			}
+			color: $info;
+		}
+	}
+	&__btn{
+		@extend .btn;
+		@extend .btn-primary;
+		@extend .btn-block;
+		max-width: 270px;
+		font-size: 16px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	//
+	@include media-breakpoint-up(xl) {}
+	@include media-breakpoint-up(lg) {}
+	@include media-breakpoint-up(md) {}
+	@include media-breakpoint-up(sm) {}
+	@include media-breakpoint-up(xs) {}
+	
+	//
+	@include media-breakpoint-between(md, xl) { }
+	
+	
+	//
+	@include media-breakpoint-only(xs) {}
+	@include media-breakpoint-only(sm) {}
+	@include media-breakpoint-only(md) {}
+	@include media-breakpoint-only(lg) {}
+	@include media-breakpoint-only(xl) {}
+	
+	//
+	@include media-breakpoint-down(xl) {}
+	@include media-breakpoint-down(lg) {}
+	@include media-breakpoint-down(md) {}
+	@include media-breakpoint-down(sm) {}
+	@include media-breakpoint-down(xs) {} 
+
+}

@@ -1,0 +1,156 @@
+.s-rew {
+	&.lazy-backgroundю.visible{
+		@include mt;
+		background-image: url(../img/rew-bg.jpg);
+		background-position: center top;
+		background-size: contain;
+		background-repeat: no-repeat;
+	}
+		h2{
+		// font-weight: 900;
+
+		color: $primary;
+	}
+
+	&__wrap{
+
+		max-width: 725px;
+	}
+
+	&__img-wrap{
+		width: 114px;
+	height: 114px;
+	border-radius: 50%;
+	position: relative;
+	overflow: hidden;
+	flex-grow: 0;
+	flex-shrink: 0;
+	border: 1px solid #dee7ec;
+	}
+	&__col{
+		display: flex;
+		flex-wrap: wrap;
+		// @include roww(10);
+		margin-left: -10px;
+		margin-right: -10px;
+		@include media-breakpoint-up(xl) {
+
+			width: 400px;
+		}
+		>*{
+			margin-left: 10px;
+			margin-right: 10px;
+		}
+	}
+	&__head-text{
+		color: #626262;
+		@extend .h4;
+	}
+
+	&__slide{
+		@include media-breakpoint-up(lg) {
+
+			width: 758px;
+		}
+		width: 100%;
+		padding-bottom: 40px;
+	}
+	&__item{
+		height: 409px;
+		text-align: center;
+		display: block;
+		position: relative;
+		@include block(758, 410);
+		overflow: hidden;
+		img{
+			@include a-cent;
+			top: 45%;
+			max-width: (5201 / 758 *100%);
+			max-height: (263 / 410 *100%);
+			height: auto;
+			// margin-bottom: 50px;
+		}
+		&.lazy-background.visible{
+
+			background-image: url(../img/rew-item-bg.png);
+			background-size: 100% 100%;
+		}
+	}
+	.swiper-container {
+		overflow: initial;
+	}
+
+
+	&__head{
+		@include media-breakpoint-up(md) {
+
+			padding-bottom: 80px;
+		}
+		padding-bottom: 40px;
+	}
+	//
+	@include media-breakpoint-up(xl) {}
+	@include media-breakpoint-up(lg) {}
+	@include media-breakpoint-up(md) {}
+	@include media-breakpoint-up(sm) {}
+	@include media-breakpoint-up(xs) {}
+	
+	//
+	@include media-breakpoint-between(md, xl) { }
+	
+	
+	//
+	@include media-breakpoint-only(xs) {}
+	@include media-breakpoint-only(sm) {}
+	@include media-breakpoint-only(md) {}
+	@include media-breakpoint-only(lg) {}
+	@include media-breakpoint-only(xl) {}
+	
+	//
+	@include media-breakpoint-down(xl) {}
+	@include media-breakpoint-down(lg) {}
+	@include media-breakpoint-down(md) {}
+	@include media-breakpoint-down(sm) {
+		h2{padding-top: 20px;}
+	}
+	@include media-breakpoint-down(xs) {} 
+
+}
+
+.swiper-container-horizontal>.swiper-scrollbar{
+	height: 7px;
+	box-shadow: inset 1px 2px 4px rgba(0, 0, 0, 0.1);
+	border-radius: 4px;
+	border: 1px solid $info;
+	background-color: #ffffff;
+}
+
+.swiper-scrollbar-drag{
+	width: 38px;
+	height: 38px;
+	box-shadow: 0 8px $h6-font-size rgba(32, 151, 179, 0.19);
+	background-color: $info;
+	border-radius: 50%;
+	top: -18px;	
+	// margin-left: -5px;
+	cursor: pointer;
+	@include mt;
+	&:hover{
+		box-shadow: 0 8px $h6-font-size rgba(32, 151, 179, 0);
+
+	}
+	&::before{
+		content: '';
+		position: absolute;
+		@include a-cent;
+		width: 9px;
+		height: 9px;
+		background-color: #ffffff;
+		border-radius: 50%;
+	}
+}
+
+
+.wrap-section{
+	
+}

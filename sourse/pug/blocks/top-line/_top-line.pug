@@ -1,0 +1,37 @@
+mixin top-line()
+	// start .top-line
+	+b.top-line
+		.container
+			.row
+				.col-xl-auto.col
+					+e.logo
+						img.res-i(src="img/logo-top.png", alt="") 
+				.col-auto.d-none.d-md-block
+					+e.ADDR.addr
+						+icon('mark')
+						| Харьков, ул. Ярослава Мудрого (Петровского), 37
+				.col-auto.d-none.d-lg-block
+					+e.block
+						+e.block-title Время
+							br
+							|  работы
+						+e.working-hours Пн-пт: 09.00 - 19.00
+							br
+							| Суббота: 09.00 - 16.00
+							br
+							span.text-body Воскресенье: выходной.
+				
+				.col-auto.d-none.d-sm-block
+					+e.block
+						+e.block-title.d-none.d-md-block Связаться
+							br
+							|  с врачом
+						div
+							div
+								+e.tel(href="tel:0800210602") 
+									+icon('tel')
+									| 0 800 210 602
+							div: +e.btn(href="#" data-toggle="modal" data-target="#modal-win"  )  Записаться на прием
+				
+				.col-auto
+	// end .top-line

@@ -1,0 +1,30 @@
+mixin s-spec()
+	// start s-spec
+	+b.s-spec#s-spec&attributes(attributes)
+		.container
+			+e.img-wrap
+				img.lazy(src="#" data-src="img/doc.jpg", alt="")
+			.row
+				+e.col.col-md-6
+					+e.block--left
+						
+						h2.fw-900 Специализация.
+							br
+							| Частая практика.
+							br
+							| Научные интересы.
+						+e.btn(href="#" data-toggle="modal" data-target="#modal-win" data-title="Пройти консультацию") Записаться на прием  
+				
+				+e.col.col-md-6
+					+e.block--right.lazy-background
+						+e.text
+							.h5.strong Специальность: лечебное дело 
+								br
+								| Врач-флеболог
+							p Варикозная болезнь, несафенный и&nbsp;ретикулярный варикоз, другие заболевания переферических сосудов
+
+							p Ультразвуковое исследование, в&nbsp;том числе исследования глубоких и&nbsp;поверхностных вен нижних конечностей.
+
+							p Миниинвазивные хирургические вмешательства при варикозной болезни.
+
+	// end s-spec

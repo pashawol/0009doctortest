@@ -1,0 +1,38 @@
+mixin s-rew()
+	// start s-rew
+	+b.s-rew.section#s-rew.lazy-background&attributes(attributes)
+		.container 
+			+e.head
+				.row
+					+e.col.col-lg-auto
+						+e.img-wrap
+							img.res-i.lazy(src="#" data-src="img/doc.jpg", alt="")
+						+b.rating-block
+							p Рейтинг врача
+							+e.star-wrap
+								+e.item
+									+icon('star-solid')
+								+e.item
+									+icon('star-regular')
+								+e.item
+									+icon('star-regular')
+								+e.item
+									+icon('star-half-alt-solid')
+								+e.item
+									+icon('star-regular')
+								+e.item 4.9
+							.small на основе 7 отзывов
+					.col
+						+e.wrap
+							h2 Здесь собраны отзывы о&nbsp;Рябинской Оксане Сергеевне со&nbsp;всего интернета.
+							+e.head-text Собираем отзывы не всегда приятные, но всегда искренние.
+			+e.slider-wrap
+				+e.slider--js.swiper-container.gal
+					.swiper-wrapper
+						- for (var x = 0; x < 4; x++)
+							+e.slide.swiper-slide
+								+e.item.lazy-background(href="img/rew.jpg")
+									img.res-i.lazy(src="#" data-src="img/rew.jpg", alt="")
+							// /+e.slide.swiper-slide
+					.swiper-scrollbar
+	// end s-rew
